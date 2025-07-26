@@ -4,17 +4,17 @@ import Header from "./components/Header";
 
 const DefaultLayout = () => {
   return (
-    <div className="bg-dark min-h-screen h-fit text-white">
+    <div className="bg-dark min-h-screen h-fit text-primary">
       {/* Header */}
       <Header />
 
 
 
       {/* children */}
-      <div className="text-center">
+      <main className="h-full text-center">
 
       <Outlet />
-      </div>
+      </main>
       
     </div>
   );
