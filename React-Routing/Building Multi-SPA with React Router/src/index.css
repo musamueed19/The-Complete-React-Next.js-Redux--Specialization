@@ -16,13 +16,26 @@
 }
 
 
-@layer utilities {
+@theme {
+  --color-dark: #1c1c1c;
+}
 
+
+@layer utilities {
 }
 
 @layer components {
-.navLink {
-  @apply text-2xl hover:underline text-gray-500 hover:text-amber-500 transition-all duration-300
-}
+  .navLink {
+    @apply text-xl text-amber-300/80 hover:text-amber-500 hover:underline bg-transparent transition-all duration-300;
+  }
 }
 
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

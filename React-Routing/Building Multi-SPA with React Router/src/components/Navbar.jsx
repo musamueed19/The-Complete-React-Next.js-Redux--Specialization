@@ -7,7 +7,7 @@ import {navItems} from '../constants/constant'
 const Navbar = () => {
   return (
       <nav>
-          <div className='flex gap-x-3'>
+          <div className='flex gap-x-3 md:gap-x-6'>
               {
                   navItems?.map((item, index) => (
                       <Link key={index} to={item.to} className='navLink'>{item.title}</Link>

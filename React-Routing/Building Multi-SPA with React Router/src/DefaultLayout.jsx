@@ -1,17 +1,20 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Header from "./components/Header";
 
 const DefaultLayout = () => {
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="bg-dark min-h-screen h-fit text-white">
       {/* Header */}
       <Header />
 
 
 
       {/* children */}
+      <div className="text-center">
+
       <Outlet />
+      </div>
       
     </div>
   );
