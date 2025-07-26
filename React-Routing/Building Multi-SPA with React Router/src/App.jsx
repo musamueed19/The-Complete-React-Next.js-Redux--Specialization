@@ -18,11 +18,11 @@ const App = () => {
           {/* Routes having Default Layout */}
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
+            <Route path="/products" element={<Products />} />
           </Route>
 
 
           {/* No Default Layout */}
-            <Route path="/products" element={<Products />} />
 
 
 

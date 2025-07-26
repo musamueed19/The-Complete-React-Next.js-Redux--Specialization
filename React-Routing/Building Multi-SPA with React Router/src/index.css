@@ -16,3 +16,13 @@
 }
 
 
+@layer utilities {
+
+}
+
+@layer components {
+.navLink {
+  @apply text-2xl hover:underline text-gray-500 hover:text-amber-500 transition-all duration-300
+}
+}
+
