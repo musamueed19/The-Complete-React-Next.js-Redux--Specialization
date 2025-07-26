@@ -7,15 +7,25 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import DefaultLayout from "./DefaultLayout";
+import Products from "./pages/Products";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
         <Routes>
+          
+          {/* Routes having Default Layout */}
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
           </Route>
+
+
+          {/* No Default Layout */}
+            <Route path="/products" element={<Products />} />
+
+
+
         </Routes>
       </BrowserRouter>
     </div>
