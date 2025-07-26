@@ -29,7 +29,7 @@
 
 @layer components {
   .navLink {
-    @apply text-xl text-amber-300/80 hover:text-amber-500 hover:underline bg-transparent transition-all duration-300;
+    @apply text-xl text-amber-300/80 bg-transparent transition-all duration-300;
   }
 }
 
