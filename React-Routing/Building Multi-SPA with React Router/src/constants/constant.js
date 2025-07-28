@@ -8,3 +8,15 @@ export const navItems = [
         title: 'Products',
     },
 ]
+
+
+export const productItems = [
+  {
+    to: "/product/details/zinger burger",
+    title: "Zinger Burger",
+  },
+  {
+    to: "/product/details/chinese Shawarma",
+    title: "Chinese Shawarma",
+  },
+];

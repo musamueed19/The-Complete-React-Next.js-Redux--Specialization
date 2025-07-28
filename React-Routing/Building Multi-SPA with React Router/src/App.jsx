@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import DefaultLayout from "./DefaultLayout";
 import Products from "./pages/Products";
 import Error from "./pages/Error";
+import ProductDetail from "./pages/ProductDetail";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route element={<DefaultLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/product/details/:productId" element={<ProductDetail />} />
             <Route path="*" element={<Error />} />
           </Route>
 
