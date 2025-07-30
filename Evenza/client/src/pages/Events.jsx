@@ -10,7 +10,7 @@ const Events = () => {
         {dummyEvents?.map((item, index) => (
           <li key={index}>
             <Link to={`/event/${item.id}`}>
-              <div className="min-h-80 h-fit bg-gray-800/70 hover:bg-gray-800 rounded-xl p-2">
+              <div className="min-h-80 h-fit bg-gray-800/70 hover:scale-105 transition-all duration-600 shadow-gray-700 hover:shadow-sm rounded-xl p-2">
                 <h3 className="text-center text-xl font-medium underline underline-offset-4 capitalize">
                   {item.title}
                 </h3>
