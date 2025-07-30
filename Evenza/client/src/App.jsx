@@ -21,14 +21,13 @@ const App = () => {
             {/* Relative Routing */}
             <Route path="/">
               <Route path="" element={<Home />} />
-              <Route path="event/:eventId" element={<EventDetail />} />
-              <Route path="event/new" element={<NewEvent />} />
-              <Route path="event/:eventId/edit" element={<EditEvent />} />
-
-
               {/* Event Navigation Layout for (nested 'events/...') route */}
               <Route element={<EventNavigation />}>
                 <Route path="events" element={<Events />} />
+
+                <Route path="event/:eventId" element={<EventDetail />} />
+                <Route path="event/new" element={<NewEvent />} />
+                <Route path="event/:eventId/edit" element={<EditEvent />} />
               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
