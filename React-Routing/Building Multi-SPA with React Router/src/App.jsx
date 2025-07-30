@@ -16,20 +16,20 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          
           {/* Routes having Default Layout */}
           <Route element={<DefaultLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/product/details/:productId" element={<ProductDetail />} />
+            <Route path="/">
+              <Route path="" element={<Home />} />
+              <Route path="products" element={<Products />} />
+              <Route
+                path="product/details/:productId"
+                element={<ProductDetail />}
+              />
+            </Route>
             <Route path="*" element={<Error />} />
           </Route>
 
-
           {/* No Default Layout */}
-
-
-
         </Routes>
       </BrowserRouter>
     </div>
