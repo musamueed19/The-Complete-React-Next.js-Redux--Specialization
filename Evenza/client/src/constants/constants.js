@@ -20,3 +20,14 @@ export const dummyEvents = [
     title: "Another event",
   },
 ]
+
+  export const eventsNavLinks = [
+    {
+      href: "/events",
+      title: "All Events",
+    },
+    {
+      href: "/event/new",
+      title: "Add Event",
+    },
+  ];
