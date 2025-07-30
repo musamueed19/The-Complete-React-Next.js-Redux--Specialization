@@ -20,7 +20,7 @@ const App = () => {
           <Route element={<RootLayout />}>
             {/* Relative Routing */}
             <Route path="/">
-              <Route path="" element={<Home />} />
+              <Route index={true} element={<Home />} />
               {/* Event Navigation Layout for (nested 'events/...') route */}
               <Route element={<EventNavigation />}>
                 <Route path="events" element={<Events />} />
