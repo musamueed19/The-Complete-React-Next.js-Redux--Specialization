@@ -9,6 +9,7 @@ import NewEvent from "./pages/NewEvent";
 import EditEvent from "./pages/EditEvent";
 import NotFound from "./pages/NotFound";
 import RootLayout from "./RootLayout";
+import EventNavigation from "./components/EventNavigation";
 
 const App = () => {
   return (
@@ -20,10 +21,15 @@ const App = () => {
             {/* Relative Routing */}
             <Route path="/">
               <Route path="" element={<Home />} />
-              <Route path="events" element={<Events />} />
               <Route path="event/:eventId" element={<EventDetail />} />
               <Route path="event/new" element={<NewEvent />} />
               <Route path="event/:eventId/edit" element={<EditEvent />} />
+
+
+              {/* Event Navigation Layout for (nested 'events/...') route */}
+              <Route element={<EventNavigation />}>
+                <Route path="events" element={<Events />} />
+              </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
           </Route>
