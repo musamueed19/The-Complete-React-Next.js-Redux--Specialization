@@ -4,13 +4,17 @@
   "description": "Evenza dummy backend server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Muhammad Musa Mueed",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "uuid": "^11.1.0"
   }
 }
